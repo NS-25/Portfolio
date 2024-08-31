@@ -1,45 +1,163 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-button{
+
+img {
+  max-width: 100%;
+}
+
+button {
   background: transparent;
 }
-body{
+
+body {
   font-family: Inter, sans-serif;
 }
 
-.nav{
+.nav {
   width: 100%;
   display: flex;
   /* for left and right */
-  padding-inline: 10%;
+  /* padding-inline: 10%; */
   /* for top and botton */
-  padding-block: 1.5em; 
+  /* padding-block: 1.5em;  */
+  padding: 1em;
   justify-content: space-between;
   align-items: center;
 }
-.nav-lists{
-list-style: none;
-display: flex;
-gap: 2rem;
+
+.nav-lists {
+  list-style: none;
+  display: none;
+  gap: 2rem;
 }
-.nav-logo{
+
+
+
+.nav-logo {
   text-decoration: none;
   color: #000;
 }
-.nav-list-item-link{
+
+.nav-list-item-link {
   text-decoration: none;
   color: #000;
 }
-.nav-list-item-link:hover{
+
+.nav-list-item-link:hover {
   color: #0db760;
 }
-.nav-button{
+
+.nav-button {
   padding-inline: 1.5rem;
   padding-block: 0.8em;
   border-radius: 10px;
   border: 1px solid #0db760;
-  
+
+}
+
+/* .container{
+  border: 1px solid black;
+  padding: 1rem;
+} */
+/* .box {
+  width: 100%;
+  height: 200px;
+  background-color: coral;
+} */
+/* ////Main///// */
+.intro {
+  padding: 1em;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.intro-text-welcome {
+  border: 0.3px solid green;
+  border-radius: 100%;
+  padding-block: 0.7rem;
+  color: #0db760;
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  max-width: max-content;
+}
+
+.intro-text-title {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.intro-text-title span {
+  color: #0db760;
+}
+
+.intro-text-description {
+  line-height: 1.5;
+  color: #323433;
+}
+
+.intro-text-cta {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.intro-text-cta-contact {
+  padding: 0.6em 1.2em;
+  border-radius: 10px;
+  border: 1px solid #0DB760;
+  background: #0DB760;
+  color: #fff;
+}
+
+.intro-text-cta-portfolio {
+  color: #000;
+  text-decoration: none;
+}
+
+.intro-image {
+  width: 100%;
+  margin-bottom: 1em;
+  /* height: 200px; */
+
+  /* border: 1px solid #0DB760; */
+}
+
+@media (min-width: 800px) {
+  .nav {
+    padding-inline: 10%;
+  }
+
+  .nav-lists {
+    display: flex;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-inline: 10%;
+
+  }
+
+  .intro-image {
+    width: 50%;
+  }
+
+  .intro-text {
+    width: 50%;
+    gap: 1em;
+  }
+}
+
+.intro-image-profile {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
 }
